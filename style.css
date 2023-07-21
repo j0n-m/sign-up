@@ -37,6 +37,14 @@ body {
   border-radius: 2px;
 }
 
+.form-field input:focus {
+  outline: 2px solid blue;
+}
+
+.form-field input:not(:focus):invalid:not(:placeholder-shown) {
+  outline: 2px solid var(--error-text-color);
+}
+
 .form-field input:not(:focus) {
   outline: 1px solid lightgray;
 }

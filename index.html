@@ -33,30 +33,32 @@
           <div class="form-left">
             <div class="form-field">
               <label for="firstname">First Name</label>
-              <input type="text" required name="firstname" id="firstname">
+              <input type="text" required name="firstname" id="firstname" placeholder="Joe" pattern=".*\S+.*">
             </div>
             <div class="form-field">
               <label for="email">Email</label>
-              <input type="email" required id="email" name="email">
+              <input type="email" required id="email" name="email" placeholder="joe@mail.com">
             </div>
             <div class="form-field">
               <label for="password">Password</label>
-              <input type="password" required minlength="6" id="password" name="password">
+              <input type="password" required minlength="6" id="password" name="password" placeholder=" "
+                pattern=".*\S+.*">
               <p class="medium-paragraph error-message"></p>
             </div>
           </div>
           <div class="form-right">
             <div class="form-field">
               <label for="lastname">Last Name</label>
-              <input type="text" required name="lastname" id="lastname">
+              <input type="text" required name="lastname" id="lastname" placeholder="Smith" pattern=".*\S+.*">
             </div>
             <div class="form-field">
               <label for="phone">Phone Number</label>
-              <input type="tel" required name="phone" id="phone">
+              <input type="tel" required name="phone" id="phone" placeholder=" " pattern=".*\S+.*">
             </div>
             <div class="form-field">
               <label for="confirmpassword">Confirm Password</label>
-              <input type="password" required minlength="6" id="confirmpassword" name="confirmpassword">
+              <input type="password" required minlength="6" id="confirmpassword" name="confirmpassword" placeholder=" "
+                pattern=".*\S+.*">
             </div>
           </div>
         </form>
