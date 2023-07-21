@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+:root {
+  --font-family-stack: 'Kanit', sans-serif, system-ui;
+  --error-text-color: #9c0010;
+  --main-background-color: rgba(243, 233, 216, 1);
+  --form-background-color: white;
+  --main-text-color: black;
+  --inverse-text-color: white;
+  --accent-background-color: #596D48;
+  --transparent-background-color: rgba(0, 0, 0, 0.45);
+  --top-padding: 7rem;
+}
+
+
+/* main */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-stack);
+}
+
+
+
+.page-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* left side */
+.left {
+  flex: 0 0 45%;
+  background-image: url(./img/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.logo {
+  height: 100px;
+}
+
+.left .wrapper {
+  padding-top: var(--top-padding);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left .header {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--transparent-background-color);
+}
+
+.left .heading-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--inverse-text-color);
+}
+
+
+/* right side */
+.right {
+  padding-top: var(--top-padding);
+  background-color: var(--main-background-color);
+  width: 100%;
+}
+
+.right p {
+  padding: 0 2rem 0 2rem;
+  max-width: 70ch;
+  border: 1px solid red;
+}
+
+.right form {
+  background-color: var(--form-background-color);
+}
+
+.btns {
+  padding-left: 2rem;
+}
+
+button.create-account-btn {
+  background-color: var(--accent-background-color);
+  color: var(--inverse-text-color);
+  padding: .5em 2em;
+  border: none;
+  border-radius: 5px;
+}
+
+
+/* class styling */
+.small-paragraph {
+  font-size: .7rem;
+
+}
+
+.left .small-paragraph {
+  color: var(--inverse-text-color);
+}
+
+.medium-paragraph {
+  font-size: 1rem;
+
+}
+
+.regular-paragraph {
+  font-size: 1.2rem;
+
+}
