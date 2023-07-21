@@ -24,11 +24,21 @@ body {
   font-family: var(--font-family-stack);
 }
 
-
-
 .page-container {
   display: flex;
   min-height: 100vh;
+}
+
+.form-field input {
+  font-size: 1.1rem;
+  font-family: sans-serif, system-ui;
+  padding: 2px;
+  border: none;
+  border-radius: 2px;
+}
+
+.form-field input:not(:focus) {
+  outline: 1px solid lightgray;
 }
 
 /* left side */
@@ -46,11 +56,12 @@ body {
 }
 
 .left .wrapper {
-  padding-top: var(--top-padding);
+  padding-top: max(var(--top-padding), 15vh);
   min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 }
 
 .left .header {
@@ -61,6 +72,7 @@ body {
   background-color: var(--transparent-background-color);
 }
 
+
 .left .heading-text {
   font-size: 2rem;
   font-weight: bold;
@@ -70,23 +82,48 @@ body {
 
 /* right side */
 .right {
-  padding-top: var(--top-padding);
+  /* padding-top: var(--top-padding); */
   background-color: var(--main-background-color);
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+.right .wrapper {
   width: 100%;
 }
 
-.right p {
+
+.right p:first-child {
+  margin-top: 0;
+}
+
+.right p:not(form p) {
   padding: 0 2rem 0 2rem;
   max-width: 70ch;
-  border: 1px solid red;
 }
 
 .right form {
   background-color: var(--form-background-color);
+  padding: .5rem 2rem .5rem;
+}
+
+.form-left,
+.form-right {
+  display: inline-flex;
+  flex-direction: column;
+  padding-right: 2rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 16px;
 }
 
 .btns {
-  padding-left: 2rem;
+  padding: 1rem 2rem 0;
 }
 
 button.create-account-btn {
@@ -95,6 +132,15 @@ button.create-account-btn {
   padding: .5em 2em;
   border: none;
   border-radius: 5px;
+}
+
+button.create-account-btn:hover {
+  background-color: #637d4e;
+  cursor: pointer;
+}
+
+button.create-account-btn:active {
+  background-color: #6fac3e;
 }
 
 
@@ -116,4 +162,24 @@ button.create-account-btn {
 .regular-paragraph {
   font-size: 1.2rem;
 
+}
+
+p.error-message {
+  color: var(--error-text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.right form label {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.75);
+
+}
+
+.right .text-login {
+  color: var(--accent-background-color)
+}
+
+.right .text-login:hover {
+  cursor: pointer;
 }

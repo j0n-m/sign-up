@@ -23,18 +23,48 @@
     </div>
 
     <section class="right">
-      <p class="regular-paragraph">This is not a real online service! You know you need something like this
-        in your life to help you realize your deepest dreams. <br>Sign up now to get started.
-      </p>
-      <p class="regular-paragraph">You know you want to.</p>
-      <form action="">
-        <p class="regular-paragraph">Lets do this!</p>
-      </form>
-      <div class="btns">
-        <button class="create-account-btn">Create Account</button>
+      <div class="wrapper">
+        <p class="regular-paragraph">This is not a real online service! You know you need something like this
+          in your life to help you realize your deepest dreams. <br>Sign up <em>now</em> to get started.
+        </p>
+        <p class="regular-paragraph">You know you want to.</p>
+        <form action="" method="get" id="main-form">
+          <p class="regular-paragraph">Let's do this!</p>
+          <div class="form-left">
+            <div class="form-field">
+              <label for="">First Name</label>
+              <input type="text" required>
+            </div>
+            <div class="form-field">
+              <label for="">Email</label>
+              <input type="email" required>
+            </div>
+            <div class="form-field">
+              <label for="">Password</label>
+              <input type="password" required>
+              <p class="medium-paragraph error-message"></p>
+            </div>
+          </div>
+          <div class="form-right">
+            <div class="form-field">
+              <label for="">Last Name</label>
+              <input type="text" required>
+            </div>
+            <div class="form-field">
+              <label for="">Phone Number</label>
+              <input type="tel" required>
+            </div>
+            <div class="form-field">
+              <label for="">Confirm Password</label>
+              <input type="password" required>
+            </div>
+          </div>
+        </form>
+        <div class="btns">
+          <button type="submit" class="create-account-btn" form="main-form">Create Account</button>
+        </div>
+        <p class="medium-paragraph">Already have an account? <span class="text-login">Log in</span></p>
       </div>
-
-      <p class="medium-paragraph">Already have an account? <span class="text-login">Log in</span></p>
     </section>
   </div>
 
